@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Globales*/
+img {
+    width: 100%;
+}
+
+/*Utilidades*/
+.contenedor {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook {
+    color: #3b5998;
+
+}
+
+.facebook:hover {
+    transform: scale(1.5);
+    transition: ease-in-out .3s all;
+}
+
+.boton-regreso {
+    cursor: pointer;
+}
+
+.boton-regreso:hover img {
+    transform: scale(1.5);
+    transition: ease .5s all;
+    /*Agregar la fecla mirando hacia arriba*/
+}
+
+/* Footer */
+.contenedor-footer {
+    background-color: rgb(245, 245, 245);
+    color: rgb(122, 122, 122);
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+.redes-sociales a {
+    color: #000000;
+    font-size: 2rem;
+}
+
+.campana-hotel {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.campana-hotel img {
+    margin-right: 1rem;
+    width: 80px;
+}
+
+.campana-hotel::after {
+    background-color: rgb(93, 93, 93);
+    content: '';
+    height: 3px;
+    margin-left: 2rem;
+    width: 350px;
+}
+
+.campana-hotel::before {
+    background-color: rgb(93, 93, 93);
+    content: '';
+    height: 3px;
+    margin-right: 2rem;
+    width: 350px;
+
+}
+
+.contenedor-copytight {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-copytight img {
+    width: 40px;
+}
+
+.contenedor-copytight p {
+    margin: 0;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
